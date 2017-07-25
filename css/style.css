@@ -1,0 +1,379 @@
+/* 1. FONTS */
+/* ================================================ */
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNovaBold.eot");
+  src: url("../fonts/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBold.woff2") format("woff2"), url("../fonts/ProximaNovaBold.woff?ver1.0") format("woff"), url("../fonts/ProximaNovaBold.ttf") format("truetype"), url("../fonts/ProximaNovaBold.svg#ProximaNovaBold") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNovaExtrabold.eot");
+  src: url("../fonts/ProximaNovaExtrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExtrabold.woff2") format("woff2"), url("../fonts/ProximaNovaExtrabold.woff?ver1.0") format("woff"), url("../fonts/ProximaNovaExtrabold.ttf") format("truetype"), url("../fonts/ProximaNovaExtrabold.svg#ProximaNovaExtrabold") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNovaReg.eot");
+  src: url("../fonts/ProximaNovaReg.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaReg.woff2") format("woff2"), url("../fonts/ProximaNovaReg.woff?ver1.0") format("woff"), url("../fonts/ProximaNovaReg.ttf") format("truetype"), url("../fonts/ProximaNovaReg.svg#ProximaNovaReg") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+/* 2. NORMALIZE */
+/* ================================================ */
+html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "ProximaNova", Arial, Tahoma, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #ffffff;
+  height: 100%;
+  position: relative;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-width: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+input, textarea {
+  color: #333;
+  outline: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input[type="button"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+td, form {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #000;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 1. MAIN ================== */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container .row {
+  margin-left: -10px;
+  margin-right: -10px;
+  *zoom: 1;
+}
+.container .row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.container .row > [class*="col-"] {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* 2. ICONS ================== */
+.ic {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../img/icons-s39926251c9.png') no-repeat;
+}
+
+.ic--next {
+  width: 10px;
+  height: 14px;
+  background-position: 0 0;
+}
+
+.ic--prev {
+  width: 10px;
+  height: 14px;
+  background-position: 0 -24px;
+}
+
+/* 2. BUTTON ================== */
+.btn, a.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 20px 0;
+  height: 40px;
+  font: normal 14px/14px Arial, sans-serif;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+}
+
+input[type="submit"].btn, button.btn {
+  padding-top: 0;
+}
+
+/* 3. FORM ================== */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  height: 40px;
+  padding: 0 15px;
+  font: normal 14px/14px Arial, sans-serif;
+  color: #000;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+input[type="text"].form-control,
+input[type="password"].form-control,
+input[type="tel"].form-control,
+input[type="email"].form-control,
+textarea.form-control {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: auto;
+  min-height: 100px;
+  padding-top: 10px;
+}
+
+label {
+  display: block;
+}
+
+/* 4. HEADER ================== */
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* 5. CONTENT ================== */
+.contact-form {
+  position: relative;
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.contact-form .input-wrap {
+  display: inline-block;
+  width: 48%;
+  margin: 20px 2% 20px 0;
+}
+.contact-form .input-wrap:nth-child(2n-2) {
+  margin: 20px 0;
+}
+.contact-form .input-item {
+  position: relative;
+  margin-top: 5px;
+  width: 100%;
+  padding: 0;
+  color: #000000;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Proxima Nova";
+  line-height: 25px;
+  text-align: left;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+  background: transparent;
+  resize: vertical;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.contact-form .label-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form .label-item.active .placeholder {
+  top: -6px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  -webkit-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+}
+.contact-form .label-item.active .input-item ~ .placeholder {
+  color: #ff0000;
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.contact-form .input-item:focus {
+  border-color: #878787;
+}
+.contact-form .input-wrap .placeholder {
+  position: absolute;
+  top: 50%;
+  display: block;
+  color: #000000;
+  white-space: nowrap;
+  font-size: 14px;
+  -webkit-transition: all, 0.4s;
+  transition: all, 0.4s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 6. FOOTER ================== */
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* 7. MEDIA ================== */

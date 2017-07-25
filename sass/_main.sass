@@ -1,0 +1,196 @@
+
+$colortitle : #171d1c
+
+
+/* 1. MAIN ================== */
+
+$gutter: 10
+$columns: 12
+
+.container
+	margin-left: auto
+	margin-right: auto
+	padding-left: $gutter + px
+	padding-right: $gutter + px
+	// border: 1px solid red
+	.row
+		margin-left: -$gutter + px
+		margin-right: -$gutter + px
+		+clr
+		&>[class*="col-"]
+			position: relative
+			min-height: 1px
+			float: left
+			padding-left: $gutter + px
+			padding-right: $gutter + px
+			
+@for $i from 1 through $columns
+	.col-#{$i}
+		width: ((100 / $columns) * $i) * 1%
+		
+.text-left
+	text-align: left !important
+
+.text-right
+	text-align: right !important
+
+
+/* 2. ICONS ================== */
+.ic 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	background: $icons no-repeat
+
+
+@each $i in next, prev
+	.ic--#{$i}
+		+s(ic--#{$i})
+
+
+/* 2. BUTTON ================== */
+
+
+.btn, a.btn 
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	padding: 10px 20px 0
+	height: 40px
+	font: normal 14px/14px Arial, sans-serif
+	+tr(all 0.2s linear)
+	border-radius: 5px
+	background: transparent
+	border: none 
+
+input[type="submit"].btn, button.btn
+	padding-top: 0
+
+
+/* 3. FORM ================== */
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea
+	height: 40px
+	padding: 0 15px
+	font: normal 14px/14px Arial, sans-serif
+	color: #000
+	background: #fff 
+	border: 1px solid #ccc
+	&.form-control
+		display: block
+		width: 100%
+
+textarea
+	resize: none 
+	height: auto
+	min-height: 100px
+	padding-top: 10px
+
+label 
+	display: block
+
+
+/* 4. HEADER ================== */
+header 
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+
+
+/* 5. CONTENT ================== */
+
+
+.contact-form
+	position: relative
+	width: 88%
+	margin: 0 auto
+	margin-top: 60px
+	.input-wrap
+		display: inline-block
+		width: 48%
+		margin: 20px 2% 20px 0
+		&:nth-child(2n-2)
+			margin: 20px 0
+
+	.input-item
+		position: relative
+		margin-top: 5px
+		width: 100%
+		padding: 0
+		color: #000000
+		outline: none
+		border: none
+		font-size: 16px
+		font-weight: 400
+		font-family: "Proxima Nova"
+		line-height: 25px
+		text-align: left
+		border-bottom: 1px solid #ececec
+		box-sizing: border-box
+		background: transparent
+		resize: vertical
+		-webkit-transition: all .2s ease
+		transition: all .2s ease
+
+	.label-item
+		position: relative
+		display: block
+		width: 100%
+		box-sizing: border-box
+		&.active
+			.placeholder
+				top: -6px
+				color: #ffffff
+				font-family: "Proxima Nova"
+				font-size: 16px
+				font-weight: 400 
+				line-height: 14px
+				-webkit-transform: translate(0px, 0)
+				transform: translate(0px, 0)
+			.input-item ~ .placeholder
+				color: #ff0000
+				font-family: "Proxima Nova"
+				font-size: 12px
+				font-weight: 700
+				line-height: 25px
+				text-transform: uppercase
+	.input-item:focus
+		border-color: #878787
+
+	.input-wrap .placeholder
+		position: absolute
+		top: 50%
+		display: block
+		color: #000000
+		white-space: nowrap
+		font-size: 14px
+		-webkit-transition: all, .4s
+		transition: all, .4s
+		-webkit-transform: translateY(-50% )
+		transform: translateY(-50% )
+		pointer-events: none
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+	
+
+/* 6. FOOTER ================== */
+footer 
+	position: absolute
+	left: 0
+	width: 100%
+	bottom: 0
+
+
+/* 7. MEDIA ================== */
+
+
+
+
+

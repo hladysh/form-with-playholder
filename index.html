@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Name site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if lt IE 9]><script src="js/html5.js?ver1.0"></script><![endif]-->		
+</head>
+<body>
+
+
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- HEADER END -->
+
+
+	<!-- CONTENT -->
+
+
+	<form action="#" id="form-request" class="contact-form" method="post">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Бізнес баланс">
+		<input type="hidden" name="admin_email" value="hladysh.im@gmail.com">
+		<input type="hidden" name="form_subject" value="Pалиште заявку">
+		<!-- END Hidden Required Fields -->
+		<div class="textarea-wrap">
+			<p class="textarea-title">Ваше питання?</p>
+			<textarea name="Питання" id="request-text" class="form-textarea input-item"></textarea>
+		</div>
+		<div class="inputs-wraper">
+			<div class="input-wrap">
+				<label class="label-item input-label">
+					<input  type="text"  class="input-item" id="name-request" name="Імя" maxlength="23" placeholder="Імя" required>
+				</label>
+			</div>
+			<div class="input-wrap">
+				<label class="label-item input-label">
+					<input  type="tel"  class="input-item" id="phone-request" name="Телефон" pattern="[0-9]{10,12}" maxlength="12" placeholder="Телефон"  required>
+				</label>
+			</div>
+			<div class="input-wrap">
+				<label class="label-item input-label">
+					<input  type="email"  class="input-item" id="email-request" name="E-mail" placeholder="E-mail"  required>
+				</label>
+			</div>
+			<button class="btn btn-detail btn-sent"> Відправити <i class="ic ic-send-mail"></i></button>
+		</div>
+	</form>
+
+	<!-- CONTENT END -->
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright"></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery-migrate.min.js"></script> -->
+	<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
